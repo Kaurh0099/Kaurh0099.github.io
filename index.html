@@ -4,83 +4,112 @@
     <head>
         <!--Title for website-->
         <title>YoursFood</title>
+        <link rel="stylesheet" href="./styles/style.css">
+        <script src="./script/script.js"></script>
     </head>
-    <!--Body tag>-->
-        <body style="background-color: rgb(216, 205, 205);">
-            <!--Heading 1-->
-            <h1 style="color: rgb(139, 0, 0); align-content:center;">Yours Food Restaurant</h1>
-            <!--Under Nav Unorderd List-->
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home page</a>
-                    </li> 
-                    <li >
-                        <a href="about.menu"> About</a>
-                    </li>
-                    <li>
-                        <a href="Recepies.html">Menu</a>
-                    </li>
-                    <li>
-                    <a href="Contact us">Contact us</a></li>
-                </ul>
-              </nav>
-              <!--Span tag-->
-              <span>
-                <!--Tag for button-->
-                <form action="button">
-                   <input type="text" placeholder="Search items">
-               </form>
-              </span>
-              <!--Text in pargargrpah tag with bold style-->
-            <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(205, 143, 10)"><b>Try deilcious and fresh food</b></p>
-            <!--Image-->
-            <img src="RFood.avif" alt="Food" height="300"> 
-            <!--Horizontal line-->      
-            <hr>
-            <!--Headong 2-->
-                <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;color: rgb(139, 0, 0); align-items: center;"><b>Menu</b></h2>
-                 <!--Text in pargargrpah tag bold style-->
-                <p style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: chocolate;"><b>View recipes, select it and Enjoy !</b></p>
-                <!--Div Tag-->
-            <div>
-                <!--Table for menu list-->
-                <table style="background-color: chocolate;"class="centre" >
-                   <tr>
-                        <th>Name</th>
-                        <th>Price</th>
-                   <tr>
-                    <td>Sushi</td>
-                    <td>$15 per plate</td>
-                <tr>
-                    <td>Kimchi</td>
-                    <td>$ 10 per plate</td>
-                </tr>
-                <tr>
-                    <td>Chicken Curry</td>
-                    <td>$30 per plate</td>
-                </tr>
-                </table>            
-        </div>
-        <!--Use br for space-->
-        <br>
-        <!--Text in p tag with some color-->
-        <p style="color: rgb(139, 0, 0);"><b>Ours Special</b></p>
-        <!--Image sources-->
-        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px">
-        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300px">
-        <!-- Heading 3-->  
-        <h3>Contact us</h3>
-        <!--Contact information ordered list-->
-        <ol type="i" style="color: chocolate;">
-            <li><a href="Email">yoursfoodrestaurant@gmail.com</a></li>
-            <li><a href="Phone">+1(825)000 0000</a></li>
-            <li>Location
-                <pre>
-                    <!-- Use iframe tag for map-->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2507.0120698658848!2d-114.12125977057494!3d51.071327248085154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fa404414271%3A0xf0f4b301ee305ac8!2sMcMahon%20Stadium!5e0!3m2!1sen!2sca!4v1743109257872!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </pre>
-            </li>
-         </ol>
-        </body>
-</html>
+    <body>
+        <!-- Main Section -->
+        <header class="main">
+          <!--navbar-->
+          <nav class="navbar">
+            <!--unorder list-->
+            <ul>
+                <li><a href="index.html">Home page</a></li>
+                <li> <a href="about.menu"> About</a></li>
+               <li><a href="Recepies.html">Menu</a></li>
+               <li><a href="Contact us">Contact us</a></li>
+            </ul>
+          </nav>
+          <!--div tag for class-->
+          <div class="text">
+            <h1>Welcome to Yours Food Restaurant</h1>
+            <button onclick="showMessage()">online order now</button>
+          </div>
+        </header>
+      
+        <!-- About Section -->
+        <section id="about" class="section">
+          <!--Heading2-->
+          <h2>About Us</h2>
+          <p>At Yours Food, we serve all variety of food.We love to serve our people.Enjoy our food and love it</p>
+        </section>
+      
+        <!-- Menu Section -->
+        <section id="menu" class="section menu-section">
+          <h2>Our Menu</h2>
+          <div class="menu">
+            <div class="menu-item">
+                <img src="https://plus.unsplash.com/premium_photo-1668146927669-f2edf6e86f6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sushi.avif">
+                <h4>Sushi</h4>
+                <p>$12</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1601050690117-94f5f6fa8bd7?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Samosa.avif">
+                <h4>Samosa with green cutney</h4>
+                <p>$10</p>
+            </div>
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1509402308-817902776267?q=80&w=2018&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salmon and zucchini.avif">
+                <h4>Meal with salmon and zucchini</h4>
+                <p>$9.99</p>
+            </div>
+          </div>
+        </section>
+      
+        <!-- business -->
+        <section class="Hours">
+          <h2>Our Working Hours</h2>
+          <div class="working hours">
+            <!--Table-->
+          <table>
+            <tr>
+              <th>Days</th>
+              <th>Hours</th>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>9:00 am to 9:00pm</td>
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00 am to 9:00pm</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>9:00 am to 9:00pm</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>9:00 am to 9:00pm</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>9:00 am to 9:00pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>10:00 am to 12:00pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>10:00 am to 12:00am</td>
+            </tr>
+          </table>
+          </div>
+        </section>
+      
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+          <h2>Contact Us</h2>
+          <p>Email: <a href="ursfood@gmail.com">yoursfoodrestaurant@gmail.com</a></p>
+          <p>Phone: <a href="Phone:+18250000000">+1 (825) 000-0000</a></p>
+          <p>Location:</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20020.942117008013!2d-113.9789002364727!3d51.15239944099749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537163d907633bcd%3A0x18a143854b867573!2sSkyview%20Ranch%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1744166207554!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+      <!--Footer-->
+        <footer>
+          <p>© 2025 Yours Food. All Rights Reserved.</p>
+        </footer>
+      </body>
+      </html>
+      

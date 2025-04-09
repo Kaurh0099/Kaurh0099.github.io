@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Font */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Navigation Bar */
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #4a2e2b;
+    padding: 10px;
+  }
+  
+  .navbar li {
+    margin: 0 15px;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover {
+    color: brown;
+  }
+  
+  /* Hero Section */
+  .main {
+    background-image: url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    color: rgb(245, 226, 13);
+    text-align: center;
+    padding: 80px 20px;
+  }
+  
+  .main-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .main-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .main button {
+    padding: 10px 20px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  /* Section Styling */
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .menu-section {
+    background-color: coral;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  .menu-item {
+    width: 200px;
+  }
+  
+  .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .menu-item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #742921;
+  }
+
+  /* Section styling */
+section.Hours {
+    padding: 2rem;
+    background-color: #f8f9fa; /* light gray background */
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading styling */
+  section.Hours h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #e96060;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Table container */
+  .working.hours {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Table styling */
+  .working.hours table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Table header */
+  .working.hours th {
+    background-color: #343a40;
+    color: #d5d8ab;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  /* Table rows */
+  .working.hours td {
+    padding: 12px;
+    border-bottom: 1px solid #d79f26;
+  }
+  
+  /* Alternate row color */
+  .working.hours tr {
+    background-color: #8e2e2e;
+  }
+  
+  /* Hover effect */
+  .working.hours tr:hover {
+    background-color: #dab615c0;
+  }
+  
+ 
+  
+  /* Contact */
+  .contact-section iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    border: 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #4a2e2b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+
