@@ -1,34 +1,51 @@
 function showMessage()
 {
-    let name = "One";
-    let age = 5;
-    let school = "SADT";
-    let message = "hI" +name +", your school is "+age
+    
+    let message = "Sorry, there is no space"
     alert(message);
 }
-function checkAge()
+
+document.getElementById('hoverbutton').onmouseover = function() {
+    document.getElementById('hoverbutton').style.background = 'lightgreen';
+}
+
+document.getElementById('hoverbutton').onmouseleave = function() {
+    document.getElementById('hoverbutton').style.background = 'steelblue';
+}
+
 {
-    let age = 17;
-    if( age>=18)
-    {
-        alert("Hey u can enter the party you match our mini requirenments")
-    }
-    else {
-        alert("Hey u are too young")
+let count=0;
+document.getElementById('ButtonCounter').onclick = function() {
+    count = count + 1;
+    document.getElementById('counter').innerHTML = 'Count:' + count;
+}
+}
+
+
+let incrementcount = 1;
+        
+function incrementing() {
+    incrementcount++;
+    const counterElement = document.getElementById('counter');
+    counterElement.textContent = incrementcount;
+    
+    if (count % 2 == 0) {
+        counterElement.style.color = "darkred";
+    } else {
+        counterElement.style.color = "white"; 
     }
 }
+
+
 function showMany()
 {
     for(let i=1;i<=10;i=i+1)
     {
-        alert("Don't stop me ! You clicked me" +1 +"times")
+        alert("Don't stop me ! You clicked me" + i + "times")
     }
 }
 function changeColor()
 {
-    document.getElementById("main").style.color="blue"
-}
-function changeImage()
-{
-document.getElementById("catdog").src ="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+   const button = document.getElementById("changecolor");
+   button.style.backgroundColor="darkred";
 }

@@ -161,13 +161,31 @@ section.Hours {
     margin-top: 20px;
     border: 0;
   }
+
+
+/* Booking */
+  .alertMe {
+  justify-content: center;
+    padding: 10px 20px;
+    background-color: chocolate;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
   
+
+
   /* Footer */
   footer {
     background-color: #4a2e2b;
     color: white;
     text-align: center;
     padding: 20px;
+  }
+
+  #hoverbutton{
+
+  transition:  0.5 ease;
   }
 
 
